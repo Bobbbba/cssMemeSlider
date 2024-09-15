@@ -269,7 +269,7 @@ center > input {
     }
 }  
 
-@media (max-width: 500px) {
+@media (max-width: 520px) {
 .wrapper-navigation{
     flex-direction: column-reverse;
     margin-top: 1.5em;
