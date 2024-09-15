@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  background-color: rgb(32, 31, 30);
+}
+.item {
+  display: flex;
+  width: 400%;
+}
+center > input {
+  display: none;
+}
+.slide img {
+  width: 40vw;
+  height: 80vh;
+  object-fit: cover;
+}
+.slide {
+  width: 25%;
+  transition: 2s;
+}
+.slider {
+  /* display: flex;
+  flex-direction: column; */
+  width: 40vw;
+  height: 90vh;
+  overflow: hidden;
+}
+.navigation {
+  margin-top: 1vw;
+  width: 40vw;
+  gap: 1vw;
+  display: flex;
+  justify-content: center;
+}
+.navigation-btn {
+  border: 2px solid  rgb(10, 75, 167);
+ background:   rgb(10, 75, 167);
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.navigation-btn:hover {
+  background:white;
+  border: 2px solid white;
+}
+#radio1:checked ~ .slider .first .text-name1{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .slider .first {
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .slider .first {
+  margin-left: -50%;
+}
+
+#radio4:checked ~ .slider .first {
+  margin-left: -75%;
+}
+
+#radio1:checked ~ .navigation #radio1 {
+    background: rgb(25, 24, 23); 
+    border: 2px solid rgb(10, 75, 167);
+}
+#radio2:checked ~ .navigation #radio2 {
+    background: rgb(25, 24, 23);
+    border: 2px solid  rgb(10, 75, 167);
+}
+#radio3:checked ~ .navigation #radio3 {
+    background: rgb(25, 24, 23); 
+    border: 2px solid rgb(10, 75, 167);
+}
+#radio4:checked ~ .navigation #radio4 {
+    background: rgb(25, 24, 23);
+    border: 2px solid rgb(10, 75, 167); 
+}
+
+#radio1:checked:hover ~ .navigation #radio1 {
+    background: rgb(25, 24, 23); 
+    border: 2px solid white;
+}
+#radio2:checked:hover ~ .navigation #radio2 {
+    background: rgb(25, 24, 23); 
+    border: 2px solid white;
+}
+#radio3:checked:hover ~ .navigation #radio3 {
+    background: rgb(25, 24, 23); 
+    border: 2px solid white;
+}
+#radio4:checked:hover ~ .navigation #radio4 {
+    background: rgb(25, 24, 23); 
+    border: 2px solid white;
+}
+
+
+.text-name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: aliceblue;
+}
+.text-slider{
+    width: 40vw;
+    height: 10vh;
+    overflow: hidden;
+}
+.text-item{
+    display: flex;
+    width: 400%;
+}
