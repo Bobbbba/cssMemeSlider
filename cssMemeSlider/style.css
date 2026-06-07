@@ -101,31 +101,71 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
   width: 1.5rem;
   height: 1.5rem;
-  padding: 0.2rem;
+  padding: 0.1rem;
   border-radius: 50%;
-  background-color: #444;
+  /* background-color: #646262; */
+  border: 1px solid transparent;
   cursor: pointer;
   transition: transform .3s ease, opasity .3s ease;
+} 
+span {
+  background-color: #000;
 }
 
-label img {
+label span {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
   border-radius: 50%;
+  /* color: aliceblue; */
   transition: transform .3s ease;
 }
-[type= radio]:checked + label {
+/* [type= radio] + label {
   transform: scale(1.2);
+   background-color: rgb(39, 99, 152);
+} */
+
+.navigation-btn {
+border: 2px solid  rgb(10, 75, 167);
+background: rgb(10, 75, 167) ;
+transition: 0.8s;
 }
+.navigation-btn:hover {
+  border: 2px solid white;
+  background: white;
+}
+#s0:checked ~ .wrapper-navigation .navigation .label1{
+    background: rgb(25, 24, 23); 
+    border: 2px solid rgb(10, 75, 167);
+}
+
+
+/* [type= radio]:checked + label  {
+  transform: scale(1.2);
+   background-color:#fff;
+} */
+
+/* [type= radio]:hover + label, span:hover {
+ background-color:#fff;
+ transition: transform .3s ease;
+ transform: scale(1.2);
+ 
+} */
+/* span:checked   {
+ background:#000;
+ transition: transform .3s ease;
+ transform: scale(1.0);
+ 
+} */
 
 .wrapper-navigation{
 display: flex;
 justify-content: space-between;
 align-items: center;
-height: 3rem;
+height: 10rem;
 padding-right: 0.2rem;
 padding-left: 0.2rem;
 }
@@ -158,7 +198,7 @@ padding-left: 0.2rem;
 :has( #s4:checked) > .text-slider {
   --k: 4;
 }
-#s0:checked ~ .wrapper-navigation .first {
+/* #s0:checked ~ .wrapper-navigation .first {
     margin-left: 0;
 }
 #s1:checked ~ .wrapper-navigation .first {
@@ -169,7 +209,21 @@ padding-left: 0.2rem;
 }
 #s3:checked ~ .wrapper-navigation .first {
     margin-left: -100%;
+} */
+
+
+@media (max-width: 1224px) {
+  .wrapper-navigation{
+    flex-direction: column-reverse;
+    justify-content: center;
+  
+  }
+  .text-slider{
+ min-height: 45%; ;
 }
+}
+
+
 /* #s0:checked ~ .wrapper-navigation .first {
   margin-left: 0;
 }
