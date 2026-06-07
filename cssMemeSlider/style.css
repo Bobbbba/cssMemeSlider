@@ -137,16 +137,17 @@ transition: 0.8s;
   border: 2px solid white;
   background: white;
 }
-#s0:checked ~ .wrapper-navigation .navigation .label1{
+#s4:checked ~ .wrapper-navigation .navigation .navigation-btn .label1{
     background: rgb(25, 24, 23); 
     border: 2px solid rgb(10, 75, 167);
 }
 
 
-/* [type= radio]:checked + label  {
-  transform: scale(1.2);
+[type= radio]:checked + label  {
+  transform: scale(1.0);
    background-color:#fff;
-} */
+   /* background: #000; */
+}
 
 /* [type= radio]:hover + label, span:hover {
  background-color:#fff;
