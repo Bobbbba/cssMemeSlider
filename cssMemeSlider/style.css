@@ -148,6 +148,13 @@ transition: 0.8s;
    background-color:#fff;
    /* background: #000; */
 }
+.radio1{
+    padding: 0px;
+    display: flex;
+    cursor: pointer;
+    
+}
+
 
 /* [type= radio]:hover + label, span:hover {
  background-color:#fff;
@@ -198,6 +205,11 @@ padding-left: 0.2rem;
 }
 :has( #s4:checked) > .text-slider {
   --k: 4;
+}
+
+
+.link_PR a{
+  color: #fff;
 }
 /* #s0:checked ~ .wrapper-navigation .first {
     margin-left: 0;
